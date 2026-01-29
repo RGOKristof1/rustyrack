@@ -8,7 +8,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  font-size: clamp(16px,4vw,50px);
+}
 body{
+  color: #a14318;
   background-color: rgb(40, 18, 9);
   background-image: url("rustyBGPattern.png");
 
@@ -26,6 +30,11 @@ header{
   justify-content: space-between;
   align-items: center;
   position: relative;
+}
+header a{
+  color: inherit;
+  text-decoration: none;
+  font-size: 1rem;
 }
 .bannerContainer{
   position: absolute;
@@ -47,15 +56,13 @@ header{
   width: fit-content;   /* csak akkora, mint a kép */
   height: fit-content;
 }
+
+.brief{
+  width: 5rem;         /* maradhat */
+  margin: 0 auto;      /* a dobozt középre rakja */
+  text-align: center;
+}
 .brief img{
   width: 100%;
-  height: 100%;
-}
-.brief{
-  display: grid;
-  justify-content: center;
-  text-align: center;
-  font-size: .5rem;
-  line-height: 2rem;
-  width: 5rem;
+  height: auto;
 }
